@@ -23,8 +23,8 @@ resource "aws_instance" "myawsserver" {
 #  user_data = templatefile("/home/gagan/terraform/aws/first_demo/user_data.tftpl", { user = var.username})
   
   tags = {
-    Name = upper("Gagandeep-aws-ec2-instance")
-    Env = lower("Dev")
+    Name = upper("Gagandeep-aws-ec2-instance-v2")
+    Env = upper("Dev")
   }
 }
 
