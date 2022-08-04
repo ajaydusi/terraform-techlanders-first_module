@@ -13,7 +13,7 @@ variable "ami" {
 
 variable "key" {
  type = string
- default = "gagan-test-key"
+ default = "adusi-keypair"
 }
 
 resource "aws_instance" "myawsserver" {
@@ -23,7 +23,7 @@ resource "aws_instance" "myawsserver" {
 #  user_data = templatefile("/home/gagan/terraform/aws/first_demo/user_data.tftpl", { user = var.username})
   
   tags = {
-    Name = upper("Gagandeep-aws-ec2-instance-v2")
+    Name = upper("adusi")
     Env = upper("Dev")
   }
 }
